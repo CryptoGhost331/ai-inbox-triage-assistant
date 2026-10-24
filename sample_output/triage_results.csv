@@ -1,0 +1,43 @@
+email_id,label,status,sender,subject,reason,summary,draft,provider,error
+msg-001,urgent,awaiting_approval,Priya Shah <priya.shah@example.com>,Mum's visit tomorrow - can you send someone earlier?,"time-sensitive wording: today, tomorrow",Mum has a hospital appointment at 11am tomorrow that we only just found out about.,"Hi Priya,
+
+Thanks for letting me know. I'm checking the roster now and will come back to you by [CONFIRM TIME] today.
+
+Thanks,
+Jordan",demo,
+msg-007,urgent,action_needed,State Licensing Unit <licensing@state-health.example>,ACTION REQUIRED: Staff background check renewal due 31 October,"time-sensitive wording: action required, expire, compliance hold",Our records show that background check clearances for 2 staff members expire on 31 October 2026.,,demo,
+msg-011,urgent,awaiting_approval,Aaron Lee <aaron.lee@example.com>,Running late - car won't start,"time-sensitive wording: running late, won't start","Jordan, my car won't start and I'm meant to be at Mrs Kaur's for 1pm.","Hi Aaron,
+
+Thanks for the heads-up. Leave it with me: I'll arrange cover or call the client, and I'll text you by [CONFIRM TIME].
+
+Thanks,
+Jordan",demo,
+msg-002,follow-up,awaiting_approval,Northside Pharmacy <orders@northsidepharmacy.example>,Medication delivery schedule change from 1 November,asks for a reply: please confirm,From 1 November our blister-pack deliveries for your clients will move from Tuesdays to Wednesdays.,"Hello,
+
+Thanks for letting us know. Confirming we've received this. I'll check whether any client needs a different arrangement and come back to you by [CONFIRM DAY].
+
+Thanks,
+Jordan",demo,
+msg-004,follow-up,awaiting_approval,Daniel Okafor <d.okafor@example.com>,Enquiry about home care for my father,"asks for a reply: ?, enquiry",My father is 84 and was recently discharged from hospital after a fall.,"Hi Daniel,
+
+Thanks for getting in touch, and I'm sorry to hear things have been difficult. I'd be glad to talk through what's needed. Could we book a short call? I can do [CONFIRM TIMES], and I'll share availability and rates after that.
+
+Thanks,
+Jordan",demo,
+msg-006,follow-up,awaiting_approval,Megan Torres <megan.torres@example.com>,Re: Shift swap next week,"asks for a reply: ?, can you, following up",Just following up on my message from Friday about swapping my Thursday shift with Aaron.,"Hi Megan,
+
+Thanks for checking. I'll look at the roster and confirm by [CONFIRM TIME].
+
+Thanks,
+Jordan",demo,
+msg-010,follow-up,awaiting_approval,Tom Whitaker <tom.whitaker@example.com>,Invoice question - October,"asks for a reply: ?, could you",Our October invoice shows 14 visits but my calendar has 12.,"Hi Tom,
+
+Thanks for flagging this. Leave it with me: I'll check the visit records against the invoice and come back to you by [CONFIRM DAY].
+
+Thanks,
+Jordan",demo,
+msg-008,fyi,no_reply_needed,Linda Park <linda.park@example.com>,Thank you,informational: thank you,"Jordan, I just wanted to say thank you to Sarah for everything she's done for Dad this month.",,demo,
+msg-012,fyi,no_reply_needed,Community Care Network <events@ccn.example>,Reminder: provider meetup on 6 November,"informational: reminder, no rsvp needed","A reminder that our quarterly provider meetup is on 6 November at the library community room, 6-8pm.",,demo,
+msg-003,ignore,skipped,CareSoft Weekly <newsletter@caresoft-news.example>,5 rostering tips for the holiday season,bulk mail (has List-Unsubscribe header),,,filter,
+msg-005,ignore,skipped,no-reply@accounting-platform.example,Your invoice INV-2291 has been paid,automated no-reply sender,,,filter,
+msg-009,ignore,skipped,Promo Deals <deals@bulk-supplies.example>,FLASH SALE: 40% off gloves and aprons - today only!,bulk mail (has List-Unsubscribe header),,,filter,

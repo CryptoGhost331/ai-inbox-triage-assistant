@@ -1,0 +1,29 @@
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "run_started", "provider": "demo", "emails": 12}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "trimmed", "email_id": "msg-001", "chars_in": 291, "chars_out": 270}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "labelled", "email_id": "msg-001", "label": "urgent", "status": "awaiting_approval"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "draft_held_for_approval", "email_id": "msg-001"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "trimmed", "email_id": "msg-002", "chars_in": 254, "chars_out": 254}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "labelled", "email_id": "msg-002", "label": "follow-up", "status": "awaiting_approval"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "draft_held_for_approval", "email_id": "msg-002"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "skipped", "email_id": "msg-003", "reason": "bulk mail (has List-Unsubscribe header)"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "trimmed", "email_id": "msg-004", "chars_in": 264, "chars_out": 264}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "labelled", "email_id": "msg-004", "label": "follow-up", "status": "awaiting_approval"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "draft_held_for_approval", "email_id": "msg-004"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "skipped", "email_id": "msg-005", "reason": "automated no-reply sender"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "trimmed", "email_id": "msg-006", "chars_in": 327, "chars_out": 174}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "labelled", "email_id": "msg-006", "label": "follow-up", "status": "awaiting_approval"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "draft_held_for_approval", "email_id": "msg-006"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "trimmed", "email_id": "msg-007", "chars_in": 284, "chars_out": 284}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "labelled", "email_id": "msg-007", "label": "urgent", "status": "action_needed"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "trimmed", "email_id": "msg-008", "chars_in": 177, "chars_out": 177}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "labelled", "email_id": "msg-008", "label": "fyi", "status": "no_reply_needed"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "skipped", "email_id": "msg-009", "reason": "bulk mail (has List-Unsubscribe header)"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "trimmed", "email_id": "msg-010", "chars_in": 205, "chars_out": 171}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "labelled", "email_id": "msg-010", "label": "follow-up", "status": "awaiting_approval"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "draft_held_for_approval", "email_id": "msg-010"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "trimmed", "email_id": "msg-011", "chars_in": 166, "chars_out": 166}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "labelled", "email_id": "msg-011", "label": "urgent", "status": "awaiting_approval"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "draft_held_for_approval", "email_id": "msg-011"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "trimmed", "email_id": "msg-012", "chars_in": 166, "chars_out": 166}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "labelled", "email_id": "msg-012", "label": "fyi", "status": "no_reply_needed"}
+{"ts": "2026-10-24T19:52:37+00:00", "run_id": "ede9eac2", "action": "run_finished", "counts": {"urgent": 3, "follow-up": 4, "ignore": 3, "fyi": 2}, "sent": 0}

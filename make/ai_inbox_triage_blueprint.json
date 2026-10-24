@@ -1,0 +1,160 @@
+{
+  "name": "AI Inbox Triage - Gmail drafts (never sends)",
+  "flow": [
+    {
+      "id": 1,
+      "module": "google-email:triggerWatchNewEmails",
+      "version": 4,
+      "parameters": {
+        "__IMTCONN__": null,
+        "filterType": "gmailSearch",
+        "q": "in:inbox -category:promotions -category:social -category:updates -from:noreply -from:no-reply",
+        "markSeen": false,
+        "limit": 10
+      },
+      "mapper": {},
+      "metadata": {
+        "designer": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "id": 2,
+      "module": "google-email:getAnEmail",
+      "version": 4,
+      "parameters": {
+        "__IMTCONN__": null
+      },
+      "mapper": {
+        "messageId": "{{1.id}}",
+        "format": "full"
+      },
+      "metadata": {
+        "designer": {
+          "x": 300,
+          "y": 0
+        }
+      }
+    },
+    {
+      "id": 3,
+      "module": "anthropic-claude:createAMessage",
+      "version": 1,
+      "parameters": {
+        "__IMTCONN__": null
+      },
+      "mapper": {
+        "model": "claude-haiku-5-5",
+        "max_tokens": 800,
+        "messages": [
+          {
+            "role": "user",
+            "inputType": "single",
+            "content": "You triage email for a small business owner and draft replies in their voice.\n\nReturn ONLY a JSON object (no code fences) with these keys:\n\"label\": one of \"urgent\", \"follow-up\", \"fyi\", \"ignore\"\n\"reason\": one short phrase explaining the label\n\"summary\": one sentence summarising the email\n\"needs_reply\": true if the sender is asking the owner for something, else false\n\"draft\": the reply text if needs_reply is true, otherwise \"\"\n\nNever promise a time, price, or staff change; use placeholders like [CONFIRM TIME].\nNever add personal or health details the sender did not write.\n\nOwner's style guide:\n# Tone and style guide (sample)\n\nIn a real project this guide is written from 20-50 of the owner's own sent\nemails, and the owner reviews and edits it before it is used.\n\n- **Name to sign off with:** Jordan\n- **Greeting:** \"Hi <first name>,\" (use \"Hello,\" if no first name is known)\n- **Sign-off:** \"Thanks,\" on its own line, then the name\n- **Length:** short. Three to five sentences. No long paragraphs.\n- **Voice:** warm, plain and practical. Acknowledge the person, then say what\n  happens next.\n- **Phrases the owner uses:** \"Thanks for letting me know\", \"I'll come back to\n  you by\", \"Leave it with me\"\n- **Never:** promise a specific time, price or staff change that the owner has\n  not confirmed. Use a placeholder like [CONFIRM TIME] instead.\n- **Never:** include health details beyond what the sender already wrote.\n\n---\nFrom: {{2.fromName}} <{{2.fromEmail}}>\nSubject: {{2.subject}}\n\n{{substring(2.fullTextBody; 0; 2000)}}"
+          }
+        ]
+      },
+      "metadata": {
+        "designer": {
+          "x": 600,
+          "y": 0
+        }
+      },
+      "onerror": [
+        {
+          "id": 6,
+          "module": "builtin:Break",
+          "version": 1,
+          "parameters": {},
+          "mapper": {
+            "retry": true,
+            "count": 3,
+            "interval": 15
+          },
+          "metadata": {
+            "designer": {
+              "x": 600,
+              "y": 300
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "module": "json:ParseJSON",
+      "version": 1,
+      "parameters": {
+        "type": ""
+      },
+      "mapper": {
+        "json": "{{3.content[1].text}}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 900,
+          "y": 0
+        }
+      }
+    },
+    {
+      "id": 5,
+      "module": "google-email:createADraft",
+      "version": 4,
+      "parameters": {
+        "__IMTCONN__": null
+      },
+      "mapper": {
+        "to": [
+          "{{2.fromEmail}}"
+        ],
+        "subject": "Re: {{2.subject}}",
+        "threadId": "{{2.threadId}}",
+        "bodyType": "collection",
+        "contents": [
+          {
+            "text": "{{replace(4.draft; newline; \"<br>\")}}"
+          }
+        ]
+      },
+      "metadata": {
+        "designer": {
+          "x": 1200,
+          "y": 0
+        }
+      },
+      "filter": {
+        "name": "Needs a reply (draft only, never sent)",
+        "conditions": [
+          [
+            {
+              "a": "{{4.needs_reply}}",
+              "o": "boolean:equal",
+              "b": "true"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "instant": false,
+    "version": 1,
+    "scenario": {
+      "roundtrips": 1,
+      "maxErrors": 3,
+      "autoCommit": true,
+      "autoCommitTriggerLast": true,
+      "sequential": true,
+      "confidential": true,
+      "dataloss": false,
+      "dlq": true,
+      "freshVariables": false
+    },
+    "designer": {
+      "orphans": []
+    }
+  }
+}

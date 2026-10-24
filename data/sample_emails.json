@@ -1,0 +1,100 @@
+[
+  {
+    "id": "msg-001",
+    "from": "Priya Shah <priya.shah@example.com>",
+    "to": "jordan@maplelanecare.example",
+    "subject": "Mum's visit tomorrow - can you send someone earlier?",
+    "date": "2026-10-20T07:42:00-04:00",
+    "body": "Hi Jordan,\n\nMum has a hospital appointment at 11am tomorrow that we only just found out about. Is there any way her carer could come at 8:30 instead of 10? She needs help getting ready and we can't get there in time.\n\nPlease let me know today if possible.\n\nThanks,\nPriya\n\nSent from my iPhone"
+  },
+  {
+    "id": "msg-002",
+    "from": "Northside Pharmacy <orders@northsidepharmacy.example>",
+    "to": "jordan@maplelanecare.example",
+    "subject": "Medication delivery schedule change from 1 November",
+    "date": "2026-10-20T08:05:00-04:00",
+    "body": "Hello,\n\nFrom 1 November our blister-pack deliveries for your clients will move from Tuesdays to Wednesdays. Please confirm you've received this and let us know if any client needs a different arrangement.\n\nKind regards,\nDispensary Team\nNorthside Pharmacy"
+  },
+  {
+    "id": "msg-003",
+    "from": "CareSoft Weekly <newsletter@caresoft-news.example>",
+    "to": "jordan@maplelanecare.example",
+    "subject": "5 rostering tips for the holiday season",
+    "date": "2026-10-20T08:30:00-04:00",
+    "list_unsubscribe": "<https://caresoft-news.example/unsubscribe>",
+    "body": "This week: five ways to keep your rosters full over the holidays. Plus, our new mobile app is out. Read more on our blog.\n\nUnsubscribe | Manage preferences"
+  },
+  {
+    "id": "msg-004",
+    "from": "Daniel Okafor <d.okafor@example.com>",
+    "to": "jordan@maplelanecare.example",
+    "subject": "Enquiry about home care for my father",
+    "date": "2026-10-20T09:14:00-04:00",
+    "body": "Hello,\n\nI found you online. My father is 84 and was recently discharged from hospital after a fall. We're looking for someone to help with personal care and meals, probably 3 or 4 days a week. Do you have availability, and what are your rates?\n\nBest,\nDaniel Okafor"
+  },
+  {
+    "id": "msg-005",
+    "from": "no-reply@accounting-platform.example",
+    "to": "jordan@maplelanecare.example",
+    "subject": "Your invoice INV-2291 has been paid",
+    "date": "2026-10-20T09:40:00-04:00",
+    "body": "This is an automated message. Invoice INV-2291 for $1,240.00 has been paid. Do not reply to this email."
+  },
+  {
+    "id": "msg-006",
+    "from": "Megan Torres <megan.torres@example.com>",
+    "to": "jordan@maplelanecare.example",
+    "subject": "Re: Shift swap next week",
+    "date": "2026-10-20T10:02:00-04:00",
+    "body": "Hi Jordan,\n\nJust following up on my message from Friday about swapping my Thursday shift with Aaron. He's fine with it - can you confirm so I can let him know?\n\nThanks!\nMegan\n\nOn Fri, Oct 17, 2026 at 4:12 PM Megan Torres wrote:\n> Hi Jordan, would it be ok if Aaron covers my Thursday 23rd shift and I take his Saturday?\n> Megan"
+  },
+  {
+    "id": "msg-007",
+    "from": "State Licensing Unit <licensing@state-health.example>",
+    "to": "jordan@maplelanecare.example",
+    "subject": "ACTION REQUIRED: Staff background check renewal due 31 October",
+    "date": "2026-10-20T10:30:00-04:00",
+    "body": "Dear Provider,\n\nOur records show that background check clearances for 2 staff members expire on 31 October 2026. Renewals must be submitted before this date to avoid a compliance hold on your registration.\n\nPlease log in to the provider portal to complete the renewal.\n\nLicensing Unit"
+  },
+  {
+    "id": "msg-008",
+    "from": "Linda Park <linda.park@example.com>",
+    "to": "jordan@maplelanecare.example",
+    "subject": "Thank you",
+    "date": "2026-10-20T11:15:00-04:00",
+    "body": "Jordan,\n\nI just wanted to say thank you to Sarah for everything she's done for Dad this month. He actually looks forward to her visits. You have a wonderful team.\n\nWarmly,\nLinda"
+  },
+  {
+    "id": "msg-009",
+    "from": "Promo Deals <deals@bulk-supplies.example>",
+    "to": "jordan@maplelanecare.example",
+    "subject": "FLASH SALE: 40% off gloves and aprons - today only!",
+    "date": "2026-10-20T11:50:00-04:00",
+    "list_unsubscribe": "<mailto:unsubscribe@bulk-supplies.example>",
+    "body": "Stock up now! 40% off all PPE today only. Click here to shop. You are receiving this because you signed up for offers."
+  },
+  {
+    "id": "msg-010",
+    "from": "Tom Whitaker <tom.whitaker@example.com>",
+    "to": "jordan@maplelanecare.example",
+    "subject": "Invoice question - October",
+    "date": "2026-10-20T12:20:00-04:00",
+    "body": "Hi Jordan,\n\nOur October invoice shows 14 visits but my calendar has 12. Could you check whether two visits were double-counted? Happy to pay once it's sorted.\n\nCheers,\nTom\n\n--\nTom Whitaker\nMobile: 555-0142"
+  },
+  {
+    "id": "msg-011",
+    "from": "Aaron Lee <aaron.lee@example.com>",
+    "to": "jordan@maplelanecare.example",
+    "subject": "Running late - car won't start",
+    "date": "2026-10-20T12:41:00-04:00",
+    "body": "Jordan, my car won't start and I'm meant to be at Mrs Kaur's for 1pm. I'll be at least 45 mins late, maybe more. Can someone cover or should I call her? Sorry!!\nAaron"
+  },
+  {
+    "id": "msg-012",
+    "from": "Community Care Network <events@ccn.example>",
+    "to": "jordan@maplelanecare.example",
+    "subject": "Reminder: provider meetup on 6 November",
+    "date": "2026-10-20T13:05:00-04:00",
+    "body": "Hi all,\n\nA reminder that our quarterly provider meetup is on 6 November at the library community room, 6-8pm. No RSVP needed. Agenda attached.\n\nCommunity Care Network"
+  }
+]

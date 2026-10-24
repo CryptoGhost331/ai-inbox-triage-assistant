@@ -1,0 +1,20 @@
+Run ede9eac2 | mode: DEMO (no API key, rule-based) | emails: 12
+
+LABEL      STATUS             FROM                      SUBJECT                                         
+urgent     awaiting_approval  Priya Shah                Mum's visit tomorrow - can you send someone earl
+urgent     action_needed      State Licensing Unit      ACTION REQUIRED: Staff background check renewal 
+urgent     awaiting_approval  Aaron Lee                 Running late - car won't start                  
+follow-up  awaiting_approval  Northside Pharmacy        Medication delivery schedule change from 1 Novem
+follow-up  awaiting_approval  Daniel Okafor             Enquiry about home care for my father           
+follow-up  awaiting_approval  Megan Torres              Re: Shift swap next week                        
+follow-up  awaiting_approval  Tom Whitaker              Invoice question - October                      
+fyi        no_reply_needed    Linda Park                Thank you                                       
+fyi        no_reply_needed    Community Care Network    Reminder: provider meetup on 6 November         
+ignore     skipped            CareSoft Weekly           5 rostering tips for the holiday season         
+ignore     skipped            no-reply@accounting-plat  Your invoice INV-2291 has been paid             
+ignore     skipped            Promo Deals               FLASH SALE: 40% off gloves and aprons - today on
+
+6 draft(s) held for approval | 0 error(s) | 0 emails sent
+
+Wrote sample_output/triage_results.csv, sample_output/triage_results.json, sample_output/approval_queue.md
+Action log: sample_output/logs/actions.jsonl
